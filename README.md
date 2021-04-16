@@ -4,7 +4,7 @@ Library for havign base errors, models and constants.
 
 For use errors
 
-````dart
+```dart
 
 import 'package:base_models/base_models.dart';
 
@@ -13,11 +13,11 @@ throw AppException(code: 'code',title: 'Title',description: 'Description');
 throw BadRequestException('code', 'description', [Reason('field', 'Field required')]);
 throw NotInternetException();
 
-```dart
+```
 
 For use BaseModel
 
-````dart
+```dart
 
 import 'package:base_models/base_models.dart';
 
@@ -41,14 +41,14 @@ class MyObject with BaseModel {
   }
 }
 
-```dart
+```
 
 For use L10nConstants
 
-````dart
+```dart
 
 import 'package:base_models/base_models.dart';
 
 var message = L10nConstants.defaultError;
 
-```dart
+```
