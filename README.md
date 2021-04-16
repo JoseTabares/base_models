@@ -1,14 +1,54 @@
-# base_models
+Library for havign base errors, models and constants.
 
-A new Flutter package project.
+## Using
 
-## Getting Started
+For use errors
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+````dart
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+import 'package:base_models/base_models.dart';
+
+throw ApiException(200, {'message':'Message'});
+throw AppException(code: 'code',title: 'Title',description: 'Description');
+throw BadRequestException('code', 'description', [Reason('field', 'Field required')]);
+throw NotInternetException();
+
+```dart
+
+For use BaseModel
+
+````dart
+
+import 'package:base_models/base_models.dart';
+
+class MyObject with BaseModel {
+  String objectId;
+  String value;
+
+  MyObject({
+    this.value,
+  });
+
+  @override
+  String get id => objectId;
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      'objectId': objectId,
+      'value': value,
+    };
+  }
+}
+
+```dart
+
+For use L10nConstants
+
+````dart
+
+import 'package:base_models/base_models.dart';
+
+var message = L10nConstants.defaultError;
+
+```dart
