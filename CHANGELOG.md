@@ -1,3 +1,7 @@
+## [0.0.2]
+
+* Update README.
+
 ## [0.0.1]
 
 * Make `api_exception`, `app_exception`, `bad_request_exception`, `not_internet_exception`, `reason` for manage errors.

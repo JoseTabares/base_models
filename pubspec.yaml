@@ -1,6 +1,6 @@
 name: base_models
 description: Flutter package for have base models.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/JoseTabares/base_models
 
 environment:
