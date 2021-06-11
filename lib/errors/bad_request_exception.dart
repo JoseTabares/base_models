@@ -1,9 +1,9 @@
 import 'reason.dart';
 
 class BadRequestException implements Exception {
-  final String code;
-  final String description;
-  final List<Reason> reasons;
+  final String? code;
+  final String? description;
+  final List<Reason>? reasons;
 
   BadRequestException(
     this.code,
@@ -13,6 +13,6 @@ class BadRequestException implements Exception {
 
   @override
   String toString() {
-    return "[Bad request] Code: $code Description: $description Reasons: ${reasons.map((e) => e.toJson()).toList()}";
+    return "[Bad request] Code: $code Description: $description Reasons: ${reasons?.map((e) => e.toJson()).toList()}";
   }
 }

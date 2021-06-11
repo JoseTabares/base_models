@@ -1,3 +1,7 @@
+## [2.0.0]
+
+* Migrate to Null Safety.
+
 ## [0.0.2]
 
 * Update README.

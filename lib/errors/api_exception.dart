@@ -1,5 +1,5 @@
 class ApiException implements Exception {
-  final int statusCode;
+  final int? statusCode;
   final dynamic response;
 
   ApiException(

@@ -1,6 +1,6 @@
 class Reason {
-  String field;
-  String message;
+  String? field;
+  String? message;
 
   Reason(
     this.field,

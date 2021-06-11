@@ -1,7 +1,7 @@
 class AppException implements Exception {
-  final String code;
-  final String title;
-  final String description;
+  final String? code;
+  final String? title;
+  final String? description;
 
   AppException({
     this.code = 'error',
